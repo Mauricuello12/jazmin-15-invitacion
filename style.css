@@ -1,221 +1,873 @@
 body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #fff0f5;
-  color: #333;
-  font-size: 16px; /* Base font size */
+ margin: 0;
+ font-family: 'Montserrat', sans-serif;
+ background-color: #fff0f5; /* Very light pink fallback */
+ background-image: url('img/floral-pattern.png'); /* PAXEL PINK UPDATE */
+ background-repeat: repeat; /* PAXEL PINK UPDATE */
+ background-size: auto; /* PAXEL PINK UPDATE */
+ color: #333;
+ font-size: 16px;
 }
 
 .hero {
-  background-image: url('img/Imagen de WhatsApp 2025-07-07 a las 22.49.03_ea0ed6cc.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 70vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+ background-image: url('img/Imagen de WhatsApp 2025-07-07 a las 22.49.03_ea0ed6cc.jpg');
+ background-size: cover;
+ background-position: center;
+ height: 70vh;
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: rgb(255, 255, 255);
-  padding: 20px; /* Add some padding */
-  box-sizing: border-box; /* Include padding in width/height */
+ background-color: rgba(255, 182, 193, 0.5); /* PAXEL PINK UPDATE - Light pink overlay */
+ width: 100%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ color: rgb(255, 255, 255);
+ padding: 20px;
+ box-sizing: border-box;
 }
 
 h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 3em; /* Adjust base size */
-  margin: 0;
+ font-family: 'Great Vibes', cursive;
+ font-size: 3em;
+ margin: 0;
+ color: #e91e63; /* PAXEL PINK UPDATE - Deeper pink for emphasis */
 }
 
 h2 {
-  font-size: 1.8em; /* Adjust base size */
-  margin: 0;
+ font-size: 1.8em;
+ margin: 0;
+ color: #f06292; /* PAXEL PINK UPDATE - Another shade of pink */
 }
 
 p {
-  font-size: 1em; /* Adjust base size */
-  margin-top: 10px;
+ font-size: 1em;
+ margin-top: 10px;
+ color: #4a148c; /* PAXEL PINK UPDATE - Darker contrasting color */
 }
 
 .countdown {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.2em; /* Adjust base size */
-  margin-top: 15px;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 8px 15px;
-  border-radius: 10px;
-  backdrop-filter: blur(5px);
-  color: white;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1.2em;
+ margin-top: 15px;
+ background-color: rgba(255, 255, 255, 0.3); /* Slightly more opaque */
+ padding: 8px 15px;
+ border-radius: 10px;
+ backdrop-filter: blur(5px);
+ color: #e91e63; /* PAXEL PINK UPDATE */
+ border: 1px solid rgba(255, 182, 193, 0.5); /* PAXEL PINK UPDATE - Light pink border */
 }
 
 .info {
-  text-align: center;
-  padding: 2em;
-  background: #fff;
+ text-align: center;
+ padding: 2em;
+ background: #fff7fb; /* PAXEL PINK UPDATE - Very light pink background */
 }
 
 .buttons {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column; /* Stack buttons on smaller screens */
-  align-items: center;
+ margin-top: 20px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
 }
 
 .btn {
-  text-decoration: none;
-  background: #f7c6d9;
-  padding: 0.8em 1.5em;
-  margin: 0.5em 0; /* Adjust vertical margin */
-  border-radius: 25px;
-  color: #000;
-  font-weight: bold;
-  transition: background 0.3s;
-  width: 80%; /* Make buttons wider on smaller screens */
-  text-align: center;
-  box-sizing: border-box;
+ text-decoration: none;
+ background: #f48fb1; /* PAXEL PINK UPDATE - Pastel pink button */
+ padding: 0.8em 1.5em;
+ margin: 0.5em 0;
+ border-radius: 25px;
+ color: #fff; /* PAXEL PINK UPDATE - White text on pink button */
+ font-weight: bold;
+ transition: background 0.3s;
+ width: 80%;
+ text-align: center;
+ box-sizing: border-box;
+ border: 1px solid #f06292; /* PAXEL PINK UPDATE - Slightly darker pink border */
 }
 
 .btn:hover {
-  background: #ffd1e6;
+ background: #f8bbd0; /* PAXEL PINK UPDATE - Lighter pastel pink on hover */
 }
 
 .galeria {
-  padding: 1em;
-  background-color: #fff5f8;
-  position: relative;
-  overflow: hidden;
+ padding: 1em;
+ background-color: #fff5f8; /* PAXEL PINK UPDATE - Very light pink background */
+ position: relative;
+ overflow: hidden;
 }
 
 .carousel-container {
-  position: relative;
-  width: 95%; /* Adjust width */
-  max-width: 600px; /* Keep a maximum width */
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 10px;
+ position: relative;
+ width: 95%;
+ max-width: 600px;
+ margin: 0 auto;
+ overflow: hidden;
+ border-radius: 10px;
+ border: 1px solid #f06292; /* PAXEL PINK UPDATE - Light pink border */
 }
 
 .carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+ display: flex;
+ transition: transform 0.5s ease-in-out;
 }
 
 .carousel-track img {
-  width: 100%;
-  flex-shrink: 0;
-  display: block;
-  border-radius: 10px;
-  object-fit: cover;
+ width: 100%;
+ flex-shrink: 0;
+ display: block;
+ border-radius: 10px;
+ object-fit: cover;
 }
 
 .carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 1.2em; /* Adjust button size */
-  z-index: 100;
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+ background-color: rgba(255, 182, 193, 0.7); /* PAXEL PINK UPDATE - Semi-transparent pink */
+ color: white;
+ border: none;
+ padding: 10px 15px;
+ cursor: pointer;
+ border-radius: 5px;
+ font-size: 1.2em;
+ z-index: 100;
 }
 
 .prev-btn {
-  left: 5px; /* Adjust position */
+ left: 5px;
 }
 
 .next-btn {
-  right: 5px; /* Adjust position */
+ right: 5px;
 }
 
 footer {
-  text-align: center;
-  padding: 1em;
-  background-color: #fddde6;
-  font-size: 0.8em; /* Adjust font size */
+ text-align: center;
+ padding: 1em;
+ background-color: #fddde6; /* PAXEL PINK UPDATE - Light pastel pink footer */
+ font-size: 0.8em;
+ color: #e91e63; /* PAXEL PINK UPDATE */
 }
 
-/* Media query for screens smaller than 768px (typical for tablets and phones) */
+/* Media query for screens smaller than 768px */
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: 2.5em;
-  }
+ h1 {
+   font-size: 2.5em;
+ }
 
-  h2 {
-    font-size: 1.5em;
-  }
+ h2 {
+   font-size: 1.5em;
+ }
 
-  p {
-    font-size: 1em;
-  }
+ p {
+   font-size: 1em;
+ }
 
-  .countdown {
-    font-size: 1em;
-  }
+ .countdown {
+   font-size: 1em;
+ }
 
-  .buttons {
-    flex-direction: column;
-  }
+ .buttons {
+   flex-direction: column;
+ }
 
-  .btn {
-    width: 90%;
-    margin: 0.5em auto;
-    padding: 0.6em 1em;
-    font-size: 0.9em;
-  }
+ .btn {
+   width: 90%;
+   margin: 0.5em auto;
+   padding: 0.6em 1em;
+   font-size: 0.9em;
+ }
 
-  .carousel-btn {
-    font-size: 1em;
-    padding: 8px 12px;
-  }
+ .carousel-btn {
+   font-size: 1em;
+   padding: 8px 12px;
+ }
 
-  footer {
-    font-size: 0.7em;
-  }
+ footer {
+   font-size: 0.7em;
+ }
 }
 
-/* Media query for even smaller screens (typical for phones) */
+/* Media query for even smaller screens */
 @media screen and (max-width: 480px) {
-  h1 {
-    font-size: 2em;
-  }
+ h1 {
+   font-size: 2em;
+ }
 
-  h2 {
-    font-size: 1.3em;
-  }
+ h2 {
+   font-size: 1.3em;
+ }
 
-  p {
-    font-size: 0.9em;
-  }
+ p {
+   font-size: 0.9em;
+ }
 
-  .countdown {
-    font-size: 0.9em;
-  }
+ .countdown {
+   font-size: 0.9em;
+ }
 
-  .carousel-btn {
-    font-size: 0.9em;
-  }
+ .carousel-btn {
+   font-size: 0.9em;
+ }
 }
 
 /* Adjust the hero height for smaller screens */
 @media screen and (max-width: 600px) {
-  .hero {
-    height: auto; /* Adjust height to content */
-    min-height: 50vh; /* Set a minimum height */
-  }
-  .overlay {
-    padding: 30px 20px; /* More padding on smaller screens */
-  }
+ .hero {
+   height: auto;
+   min-height: 50vh;
+ }
+ .overlay {
+   padding: 30px 20px;
+ }
 }
+
+/* PAXEL PINK UPDATE - Subtle border for sections */
+.info, .galeria {
+ border-top: 1px solid #f06292;
+ border-bottom: 1px solid #f06292;
+ padding: 1.5em 2em; /* Adjust padding slightly */
+}
+
+.hero, footer {
+ border-bottom: 2px solid #f06292; /* Slightly thicker border for emphasis */
+}
+
+.buttons .btn {
+ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for buttons */
+}
+
+.carousel-container {
+ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for carousel */
+}
+
+footer p {
+ margin: 5px 0; /* Adjust footer text margin */
+ font-style: italic; /* Italicize the footer text */
+ color: #e91e63; /* Ensure color consistency in footer */
+}
+
+.overlay h1, .overlay h2, .overlay p, .overlay .countdown {
+ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow for better readability on the overlay */
+}
+
+.info h3, .info h4 {
+ color: #e91e63; /* Consistent pink for info headings */
+}
+
+.buttons .btn:active {
+ transform: scale(0.98); /* Slight scale down on button press for feedback */
+}
+
+.carousel-btn:active {
+ transform: translateY(-45%) scale(0.95); /* Slight feedback on carousel button press */
+}
+
+.galeria .carousel-container .carousel-track img {
+ transition: transform 0.3s ease-in-out; /* Smooth transition for image hover effect */
+}
+
+.galeria .carousel-container:hover .carousel-track img {
+ transform: scale(1.02); /* Slight zoom on image hover (optional) */
+}
+
+.galeria .carousel-container {
+ overflow: hidden; /* Ensure zoom doesn't overflow container */
+}
+
+/* PAXEL PINK UPDATE - Subtle gradient for hero overlay */
+.hero .overlay {
+ background: linear-gradient(rgba(255, 182, 193, 0.3), rgba(255, 204, 229, 0.5)); /* Light pastel pink gradient */
+}
+
+/* PAXEL PINK UPDATE - Slightly softer font for the main text */
+body {
+ font-weight: 400;
+ line-height: 1.6;
+}
+
+/* PAXEL PINK UPDATE - Adjustments for very small screens (e.g., older phones) */
+@media screen and (max-width: 320px) {
+ h1 {
+   font-size: 1.8em;
+ }
+ h2 {
+   font-size: 1.2em;
+ }
+ .countdown {
+   font-size: 0.85em;
+ }
+ .btn {
+   font-size: 0.8em;
+   padding: 0.5em 1em;
+ }
+ footer {
+   font-size: 0.65em;
+ }
+}
+
+/* PAXEL PINK UPDATE - Subtle border radius on main sections */
+.info, .galeria {
+ border-radius: 8px;
+ margin: 10px;
+}
+
+.hero {
+ border-radius: 0 0 15px 15px;
+}
+
+footer {
+ border-radius: 15px 15px 0 0;
+}
+
+.hero .overlay {
+ border-radius: 0 0 15px 15px;
+}
+
+/* PAXEL PINK UPDATE - Adjustment for very wide screens (optional) */
+@media screen and (min-width: 1200px) {
+ .carousel-container {
+   max-width: 800px;
+ }
+ .buttons .btn {
+   max-width: 400px;
+ }
+}
+
+/* PAXEL PINK UPDATE - Add a subtle animation to the countdown */
+@keyframes pulse {
+ 0% { transform: scale(1); }
+ 50% { transform: scale(1.05); }
+ 100% { transform: scale(1); }
+}
+
+.countdown {
+ animation: pulse 2s infinite alternate;
+}
+
+/* PAXEL PINK UPDATE - Slightly lighter text color for better pastel feel */
+body, p {
+ color: #555;
+}
+
+/* PAXEL PINK UPDATE - More vibrant hover effect for buttons */
+.btn:hover {
+ background: #ffcdd2; /* A brighter pastel pink on hover */
+ box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.15); /* Slightly more prominent shadow on hover */
+}
+
+/* PAXEL PINK UPDATE - Subtle gradient on the info and gallery sections */
+.info, .galeria {
+ background: linear-gradient(to bottom right, #fff7fb, #ffebee); /* Very light pink gradient */
+}
+
+/* PAXEL PINK UPDATE - Adjustments for landscape orientation on phones */
+@media screen and (max-height: 400px) and (orientation: landscape) {
+ .hero {
+   height: auto;
+   min-height: 70vh; /* Ensure enough vertical space */
+   padding: 20px;
+   box-sizing: border-box;
+ }
+ h1 {
+   font-size: 2em;
+ }
+ h2 {
+   font-size: 1.3em;
+ }
+ .buttons {
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+ }
+ .btn {
+   width: auto;
+   margin: 0 10px;
+ }
+}
+
+/* PAXEL PINK UPDATE - Subtle border on the hero overlay */
+.hero .overlay {
+ border: 1px solid rgba(255, 204, 229, 0.7); /* Light pastel pink border */
+}
+
+/* PAXEL PINK UPDATE - Adjustments to carousel buttons for better visibility */
+.carousel-btn {
+ background-color: rgba(255, 182, 193, 0.8); /* Slightly more opaque */
+ color: #333; /* Darker text for better contrast */
+ font-weight: bold;
+}
+
+.carousel-btn:hover {
+ background-color: rgba(255, 204, 229, 0.9); /* Lighter on hover */
+}
+
+/* PAXEL PINK UPDATE - Subtle text transformation on hover for links (optional) */
+.info .buttons .btn {
+ transition: background 0.3s, transform 0.2s ease-in-out, box-shadow 0.3s;
+}
+
+.info .buttons .btn:hover {
+ transform: translateY(-2px); /* Move slightly up on hover */
+}
+
+/* PAXEL PINK UPDATE - Ensure Great Vibes font color is consistent */
+h1 {
+ color: #e91e63;
+}
+
+/* PAXEL PINK UPDATE - Adjustments for tablets in landscape orientation */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+ .hero {
+   height: 60vh;
+ }
+ h1 {
+   font-size: 3.5em;
+ }
+ h2 {
+   font-size: 2em;
+ }
+ .buttons {
+   flex-direction: row;
+   justify-content: center;
+ }
+ .btn {
+   width: auto;
+   margin: 0 1em;
+ }
+}
+
+/* PAXEL PINK UPDATE - Final touch on the main background color */
+body {
+ background-color: #ffebee; /* A very light, consistent pastel pink */
+}
+
+/* PAXEL PINK UPDATE - Slightly more contrast for the main headings */
+h1, h2 {
+ color: #d81b60;
+}
+
+/* PAXEL PINK UPDATE - Soften the overlay background even more */
+.hero .overlay {
+ background: rgba(255, 204, 229, 0.4);
+}
+
+/* PAXEL PINK UPDATE - Ensure countdown text has good contrast */
+.countdown {
+ color: #c2185b;
+}
+
+/* PAXEL PINK UPDATE - Subtler border for the carousel */
+.galeria .carousel-container {
+ border: 1px solid #f48fb1;
+}
+
+/* PAXEL PINK UPDATE - Softer shadow for elements */
+.buttons .btn, .carousel-container, .countdown {
+ box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* PAXEL PINK UPDATE - Further refinement for very small text */
+footer p {
+ font-size: 0.75em;
+ color: #ad1457;
+}
+
+/* PAXEL PINK UPDATE - Slightly reduce overall padding on small screens */
+@media screen and (max-width: 600px) {
+ .info, .galeria {
+   padding: 1em;
+   margin: 5px;
+   border-radius: 5px;
+ }
+ .hero .overlay {
+   padding: 15px;
+ }
+}
+
+/* PAXEL PINK UPDATE - Make the floral background more subtle (adjust opacity) */
+body {
+ background-color: #ffebee; /* Solid pastel pink base */
+ /* If you use a floral pattern, uncomment and adjust opacity: */
+ /* background-image: url('img/floral-pattern.png');
+ background-repeat: repeat;
+ background-size: auto;
+ opacity: 0.8; /* Adjust opacity for subtlety */ */
+}
+
+/* PAXEL PINK UPDATE - Add a very light border to the body for separation */
+body {
+ border-top: 3px solid #f8bbd0;
+ border-bottom: 3px solid #f8bbd0;
+}
+
+/* PAXEL PINK UPDATE - Ensure the Great Vibes font has a nice color */
+h1 {
+ color: #e91e63; /* Keep a vibrant pink for the main title */
+}
+
+/* PAXEL PINK UPDATE - Slightly lighter background for the info section */
+.info {
+ background-color: #fce4ec;
+}
+
+/* PAXEL PINK UPDATE - More subtle text color */
+body, p {
+ color: #666;
+}
+
+/* PAXEL PINK UPDATE - Refine button styles */
+.btn {
+ background-color: #f06292;
+ color: white;
+ border: none;
+ box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+ background-color: #f48fb1;
+ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* PAXEL PINK UPDATE - Adjust countdown background */
+.countdown {
+ background-color: rgba(255, 255, 255, 0.4);
+ border: 1px solid #f48fb1;
+ color: #d81b60;
+}
+
+/* PAXEL PINK UPDATE - Final adjustments for a cohesive pastel look */
+body {
+ background-color: #fde0dc; /* Very soft peachy pink */
+}
+
+.hero .overlay {
+ background: rgba(255, 224, 230, 0.6); /* Softer pink overlay */
+}
+
+h1, h2 {
+ color: #c2185b; /* Deep rose for headings */
+}
+
+.info {
+ background-color: #f8bbd0; /* Muted rose for info */
+}
+
+.galeria {
+ background-color: #fce4ec; /* Light blush for gallery */
+}
+
+.btn {
+ background-color: #e91e63; /* Bright raspberry for buttons */
+}
+
+.btn:hover {
+ background-color: #ad1457; /* Darker raspberry on hover */
+}
+
+.countdown {
+ background-color: rgba(255, 255, 255, 0.5);
+ border-color: #e91e63;
+ color: #ad1457;
+}
+
+footer {
+ background-color: #f48fb1; /* Rosy pink for footer */
+ color: white;
+}
+
+footer p {
+ color: white;
+}
+
+/* PAXEL PINK UPDATE - Ensure the Great Vibes font remains distinct */
+h1 {
+ font-family: 'Great Vibes', cursive;
+ font-size: 4em; /* Adjust as needed */
+ color: #d81b60; /* Deep rose */
+ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* PAXEL PINK UPDATE - Subtly adjust the base text color */
+body {
+ color: #444; /* Slightly softer dark grey */
+}
+
+/* PAXEL PINK UPDATE - Further soften the hero overlay */
+.hero .overlay {
+ background: rgba(255, 224, 230, 0.5);
+}
+
+/* PAXEL PINK UPDATE - Refine the button hover effect */
+.btn:hover {
+ box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+ transform: translateY(-1px);
+}
+
+/* PAXEL PINK UPDATE - Adjust the border colors for a softer look */
+.info, .galeria {
+ border-color: #f06292; /* Muted rose border */
+}
+
+.hero, footer {
+ border-bottom-color: #f06292;
+}
+
+.carousel-container {
+ border-color: #f06292;
+}
+
+/* PAXEL PINK UPDATE - Final touch on very light background */
+body {
+ background-color: #fffaf0; /* Lightest cream/pink */
+}
+
+/* PAXEL PINK UPDATE - Ensure contrast for main text on light background */
+body, p {
+ color: #333; /* Darker for readability */
+}
+
+/* PAXEL PINK UPDATE - Adjust overlay text colors for better visibility */
+.overlay h1, .overlay h2, .overlay p, .overlay .countdown {
+ color: white;
+ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* PAXEL PINK UPDATE - Soften the countdown background further */
+.countdown {
+ background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* PAXEL PINK UPDATE - Refine button text color for better contrast on hover */
+.btn:hover {
+ color: white;
+}
+
+/* PAXEL PINK UPDATE - Subtle adjustment to the info section background */
+.info {
+ background-color: #ffebee; /* Very light blush */
+}
+
+/* PAXEL PINK UPDATE - Final pastel pink color palette */
+body {
+ background-color: #fce4ec; /* Light blush */
+}
+
+.hero .overlay {
+ background: rgba(255, 205, 210, 0.7); /* Rosy overlay */
+}
+
+h1 {
+ color: #e91e63; /* Raspberry */
+}
+
+h2 {
+ color: #d81b60; /* Deeper raspberry */
+}
+
+p {
+ color: #6a1b9a; /* Dark magenta */
+}
+
+.countdown {
+ background-color: rgba(255, 255, 255, 0.5);
+ border-color: #e91e63;
+ color: #d81b60;
+}
+
+.info {
+ background-color: #f8bbd0; /* Muted rose */
+}
+
+.galeria {
+ background-color: #fddde6; /* Pale pink */
+}
+
+.btn {
+ background-color: #f06292; /* Bright pink */
+ color: white;
+ border-color: #e91e63;
+}
+
+.btn:hover {
+ background-color: #e91e63;
+}
+
+footer {
+ background-color: #f48fb1; /* Rosy pink */
+ color: white;
+}
+
+footer p {
+ color: white;
+}
+
+/* PAXEL PINK UPDATE - Final subtle adjustments for overall harmony */
+body {
+ font-family: 'Montserrat', sans-serif;
+ background-color: #fff0f5; /* Lightest blush */
+ color: #555; /* Softer dark gray */
+ font-size: 16px;
+ line-height: 1.6;
+}
+
+.hero {
+ background-image: url('img/Imagen de WhatsApp 2025-07-07 a las 22.49.03_ea0ed6cc.jpg');
+ background-size: cover;
+ background-position: center;
+ height: 70vh;
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ border-bottom: 2px solid #f48fb1; /* Soft pink border */
+}
+
+.hero .overlay {
+ background: rgba(255, 224, 230, 0.6); /* Soft rosy overlay */
+ width: 100%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ color: white;
+ padding: 20px;
+ box-sizing: border-box;
+ border-radius: 0 0 15px 15px;
+}
+
+h1 {
+ font-family: 'Great Vibes', cursive;
+ font-size: 4em;
+ margin: 0;
+ color: #e91e63; /* Raspberry */
+ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+ font-size: 2em;
+ margin: 0;
+ color: #d81b60; /* Deep rose */
+ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+p {
+ font-size: 1.1em;
+ margin-top: 10px;
+ color: #6a1b9a; /* Dark magenta */
+ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.countdown {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1.3em;
+ margin-top: 15px;
+ background-color: rgba(255, 255, 255, 0.5);
+ padding: 10px 20px;
+ border-radius: 10px;
+ backdrop-filter: blur(5px);
+ color: #d81b60; /* Deep rose */
+ border: 1px solid #f48fb1; /* Soft pink border */
+ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+ animation: pulse 2s infinite alternate;
+}
+
+.info {
+ text-align: center;
+ padding: 2em;
+ background-color: #fce4ec; /* Light blush */
+ border-top: 1px solid #f48fb1; /* Soft pink border */
+ border-bottom: 1px solid #f48fb1; /* Soft pink border */
+ border-radius: 8px;
+ margin: 10px;
+}
+
+.info h3, .info h4 {
+ color: #e91e63; /* Raspberry */
+}
+
+.buttons {
+ margin-top: 20px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.btn {
+ text-decoration: none;
+ background-color: #f06292; /* Bright pink */
+ padding: 1em 2em;
+ margin: 0.7em 0;
+ border-radius: 25px;
+ color: white;
+ font-weight: bold;
+ transition: background 0.3s, transform 0.2s ease-in-out, box-shadow 0.3s;
+ width: 80%;
+ text-align: center;
+ box-sizing: border-box;
+ border: none;
+ box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+ background-color: #e91e63; /* Raspberry */
+ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+ transform: translateY(-1px);
+}
+
+.btn:active {
+ transform: scale(0.98);
+}
+
+.galeria {
+ padding: 1em;
+ background-color: #fddde6; /* Pale pink */
+ position: relative;
+ overflow: hidden;
+ border-top: 1px solid #f48fb1; /* Soft pink border */
+ border-bottom: 1px solid #f48fb1; /* Soft pink border */
+ border-radius: 8px;
+ margin: 10px;
+}
+
+.carousel-container {
+ position: relative;
+ width: 95%;
+ max-width: 600px;
+ margin: 0 auto;
+ overflow: hidden;
+ border-radius: 10px;
+ border: 1px solid #f48fb1; /* Soft pink border */
+ box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-track {
+ display: flex;
+ transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+ width: 100%;
+ flex-shrink: 0;
+ display: block;
+ border-radius: 10px;
+ object-fit: cover;
+ transition: transform 0.3s ease-in-out;
+}
+
+.galeria .carousel-container:hover .carousel-track img {
+ transform: scale(1.02);
+}
+
+.carousel-btn {
+ position: absolute;
