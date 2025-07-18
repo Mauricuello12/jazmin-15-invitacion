@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+  font-size: 16px; /* Base font size */
+}
+
+.hero {
+  background-image: url('img/Imagen de WhatsApp 2025-07-07 a las 22.49.03_ea0ed6cc.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  padding: 20px; /* Add some padding */
+  box-sizing: border-box; /* Include padding in width/height */
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3em; /* Adjust base size */
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.8em; /* Adjust base size */
+  margin: 0;
+}
+
+p {
+  font-size: 1em; /* Adjust base size */
+  margin-top: 10px;
+}
+
+.countdown {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em; /* Adjust base size */
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 15px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  color: white;
+}
+
+.info {
+  text-align: center;
+  padding: 2em;
+  background: #fff;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Stack buttons on smaller screens */
+  align-items: center;
+}
+
+.btn {
+  text-decoration: none;
+  background: #f7c6d9;
+  padding: 0.8em 1.5em;
+  margin: 0.5em 0; /* Adjust vertical margin */
+  border-radius: 25px;
+  color: #000;
+  font-weight: bold;
+  transition: background 0.3s;
+  width: 80%; /* Make buttons wider on smaller screens */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  background: #ffd1e6;
+}
+
+.galeria {
+  padding: 1em;
+  background-color: #fff5f8;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-container {
+  position: relative;
+  width: 95%; /* Adjust width */
+  max-width: 600px; /* Keep a maximum width */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+  width: 100%;
+  flex-shrink: 0;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.2em; /* Adjust button size */
+  z-index: 100;
+}
+
+.prev-btn {
+  left: 5px; /* Adjust position */
+}
+
+.next-btn {
+  right: 5px; /* Adjust position */
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #fddde6;
+  font-size: 0.8em; /* Adjust font size */
+}
+
+/* Media query for screens smaller than 768px (typical for tablets and phones) */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .countdown {
+    font-size: 1em;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 90%;
+    margin: 0.5em auto;
+    padding: 0.6em 1em;
+    font-size: 0.9em;
+  }
+
+  .carousel-btn {
+    font-size: 1em;
+    padding: 8px 12px;
+  }
+
+  footer {
+    font-size: 0.7em;
+  }
+}
+
+/* Media query for even smaller screens (typical for phones) */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  .countdown {
+    font-size: 0.9em;
+  }
+
+  .carousel-btn {
+    font-size: 0.9em;
+  }
+}
+
+/* Adjust the hero height for smaller screens */
+@media screen and (max-width: 600px) {
+  .hero {
+    height: auto; /* Adjust height to content */
+    min-height: 50vh; /* Set a minimum height */
+  }
+  .overlay {
+    padding: 30px 20px; /* More padding on smaller screens */
+  }
+}
