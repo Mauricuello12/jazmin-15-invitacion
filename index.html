@@ -1,48 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>15 Años de Jazmín</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="hero">
-    <div class="overlay">
-      <h1>Mis 15 Años</h1>
-      <h2>Jazmín</h2>
-      <p>¡Estás invitado a una noche inolvidable!</p>
-      <div id="countdown" class="countdown"></div> </div>
+
+  <!-- Carrusel -->
+  <div class="carousel">
+    <div class="slides">
+      <img src="img/foto1.jpg" alt="Foto 1">
+      <img src="img/foto2.jpg" alt="Foto 2">
+      <img src="img/foto3.jpg" alt="Foto 3">
+      <img src="img/foto4.jpg" alt="Foto 4">
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+    <div class="dots"></div>
   </div>
 
-  <section class="info">
-    <h3>🗓️ 8 de Noviembre - 20:00 hs</h3>
-    <h4>📍 Salón Sauron Adventure</h4>
-    <div class="buttons">
-      <a href="https://maps.app.goo.gl/5gBaHrAPNFHCUprc8" target="_blank" class="btn">Ver Ubicación</a>
-      <a href="https://wa.me/543541232547?text=Hola! Confirmo mi asistencia a los 15 de Jazmín 🎉" target="_blank" class="btn">Confirmar Asistencia</a>
-    </div>
+  <!-- Texto principal -->
+  <section class="intro">
+    <h1>Mis 15 Años</h1>
+    <h2>Jazmín</h2>
+    <p>Te invito a compartir una noche inolvidable.</p>
+    <p><strong>📍 Salón: </strong> Nombre del Salón</p>
+    <p><strong>📅 Fecha: </strong> 12 de Octubre 2025</p>
+    <p><strong>⏰ Hora: </strong> 21:00 hs</p>
   </section>
-
-  <section class="galeria">
-    <div class="carousel-container">
-      <div class="carousel-track">
-        <img src="img/Imagen de WhatsApp 2025-07-04 a las 23.11.43_60701c2f.jpg" alt="Foto 1">
-        <img src="img/Imagen de WhatsApp 2025-07-04 a las 23.12.34_543762da.jpg" alt="Foto 2">
-        <img src="img/Imagen de WhatsApp 2025-07-04 a las 23.16.55_881f8054.jpg" alt="Foto 3">
-        <img src="img/Imagen de WhatsApp 2025-07-07 a las 22.41.34_e0e0f467.jpg" alt="Foto 4">
-        <img src="img/Imagen de WhatsApp 2025-07-07 a las 22.48.41_ae5ce0e0.jpg" alt="Foto 5">
-        <img src="img/Imagen de WhatsApp 2025-07-07 a las 22.49.02_34324a52.jpg" alt="Foto 6">
-      </div>
-      <button class="carousel-btn prev-btn">❮</button>
-      <button class="carousel-btn next-btn">❯</button>
-    </div>
-  </section>
-
-  <footer>
-    <p>Con amor 💖 Jazmín | Compartí esta invitación</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>
