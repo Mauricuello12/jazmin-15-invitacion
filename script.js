@@ -1,111 +1,87 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const carouselTrack = document.querySelector('.carousel-track');
-    const images = Array.from(carouselTrack.children);
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
 
-    const imageWidth = images[0].getBoundingClientRect().width;
-    let currentImageIndex = 0;
+/* Carrusel */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 90vh; /* PC */
+  overflow: hidden;
+}
 
-    // Arrange images side by side
-    const setImagePosition = (image, index) => {
-        image.style.left = imageWidth * index + 'px';
-    };
-    images.forEach(setImagePosition);
+@media (max-width: 768px) {
+  .carousel {
+    height: 70vh; /* Celular */
+  }
+}
 
-    const moveToSlide = (track, currentImage, targetImage) => {
-        track.style.transform = 'translateX(-' + targetImage.style.left + ')';
-        currentImageIndex = images.indexOf(targetImage);
-    };
+.carousel .slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
 
-    prevBtn.addEventListener('click', () => {
-        if (currentImageIndex > 0) {
-            const prevImage = images[currentImageIndex - 1];
-            moveToSlide(carouselTrack, images[currentImageIndex], prevImage);
-        } else {
-            // Loop to the last image
-            const lastImage = images[images.length - 1];
-            moveToSlide(carouselTrack, images[currentImageIndex], lastImage);
-        }
-    });
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* mantiene proporción */
+}
 
-    nextBtn.addEventListener('click', () => {
-        if (currentImageIndex < images.length - 1) {
-            const nextImage = images[currentImageIndex + 1];
-            moveToSlide(carouselTrack, images[currentImageIndex], nextImage);
-        } else {
-            // Loop to the first image
-            const firstImage = images[0];
-            moveToSlide(carouselTrack, images[currentImageIndex], firstImage);
-        }
-    });
-});document.addEventListener('DOMContentLoaded', () => {
-    // Carousel functionality
-    const carouselTrack = document.querySelector('.carousel-track');
-    const images = Array.from(carouselTrack.children);
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
+/* Botones del carrusel */
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.carousel .prev { left: 10px; }
+.carousel .next { right: 10px; }
 
-    const imageWidth = images[0].getBoundingClientRect().width;
-    let currentImageIndex = 0;
+/* Puntos indicadores */
+.dots {
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+.dots span {
+  height: 12px;
+  width: 12px;
+  margin: 0 3px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.dots .active {
+  background: #fff;
+}
 
-    // Arrange images side by side
-    const setImagePosition = (image, index) => {
-        image.style.left = imageWidth * index + 'px';
-    };
-    images.forEach(setImagePosition);
-
-    const moveToSlide = (track, currentImage, targetImage) => {
-        track.style.transform = 'translateX(-' + targetImage.style.left + ')';
-        currentImageIndex = images.indexOf(targetImage);
-    };
-
-    prevBtn.addEventListener('click', () => {
-        if (currentImageIndex > 0) {
-            const prevImage = images[currentImageIndex - 1];
-            moveToSlide(carouselTrack, images[currentImageIndex], prevImage);
-        } else {
-            // Loop to the last image
-            const lastImage = images[images.length - 1];
-            moveToSlide(carouselTrack, images[currentImageIndex], lastImage);
-        }
-    });
-
-    nextBtn.addEventListener('click', () => {
-        if (currentImageIndex < images.length - 1) {
-            const nextImage = images[currentImageIndex + 1];
-            moveToSlide(carouselTrack, images[currentImageIndex], nextImage);
-        } else {
-            // Loop to the first image
-            const firstImage = images[0];
-            moveToSlide(carouselTrack, images[currentImageIndex], firstImage);
-        }
-    });
-
-    // Countdown functionality
-    const countdownElement = document.getElementById('countdown');
-    const partyDate = new Date('2025-11-08T20:00:00').getTime(); // November 8, 2025, 8:00 PM
-
-    function updateCountdown() {
-        const now = new Date().getTime();
-        const distance = partyDate - now;
-
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        if (distance < 0) {
-            clearInterval(countdownInterval);
-            countdownElement.innerHTML = "¡La fiesta ha comenzado!";
-        } else {
-            countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-        }
-    }
-
-    // Update the countdown every 1 second
-    const countdownInterval = setInterval(updateCountdown, 1000);
-
-    // Initial call to display the countdown immediately
-    updateCountdown();
-});
+/* Sección texto */
+.intro {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f8f8f8;
+}
+.intro h1 {
+  font-size: 2.5em;
+  color: #b38b59;
+}
+.intro h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #444;
+}
+.intro p {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
